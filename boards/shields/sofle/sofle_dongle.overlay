@@ -80,7 +80,7 @@
             , <&key_physical_attrs 100 100  1125 412       0     0     0>
             , <&key_physical_attrs 100 100  1225 437       0     0     0>
         ;
-    }
+    };
 
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
