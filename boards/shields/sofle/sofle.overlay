@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2020 Ryan Cross
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+/ {
+    
+    &left_encoder {
+    status = "okay";
+};
+
+&right_encoder {
+    status = "okay";
+};
+};
