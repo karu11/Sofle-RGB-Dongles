@@ -114,11 +114,5 @@
             >;
             
         };
-        encoder_map {
-            bindings = <
-                &encoder_cw  &kp RIGHT
-                &encoder_ccw &kp LEFT
-            >;
-        };
     };
 };
