@@ -7,7 +7,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 / {
-
+  aliases {
+        encoder0 = &ec11_0;
+    };
     
 
     right_encoder: encoder_right {
