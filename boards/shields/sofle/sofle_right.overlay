@@ -19,11 +19,4 @@
         steps = <80>;
         status = "disabled";
     };
-    
-
-
-
-    &right_encoder {
-        status = "okay";
-        };
 };
