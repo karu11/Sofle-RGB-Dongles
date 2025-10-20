@@ -41,11 +41,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE      &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                &kp N6         &kp N7           &kp N8     &kp N9     &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W     &kp E     &kp R   &kp T                                 &kp Y          &kp U            &kp I      &kp O      &kp P     &kp NON_US_BACKSLASH
-&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F   &kp G                                 &kp H          &kp J            &kp K      &kp L      &kp SEMI  &kp ENTER
-&kp LCTRL       &kp Z   &kp X     &kp C     &kp V   &kp B   &kp C_MUTE    &rgb_ug RGB_ON  &kp N          &kp M            &kp COMMA  &kp DOT    &kp SQT   &kp RSHFT
-                        &kp LGUI  &kp LALT  &mo 1   &tog 3  &kp DEL       &kp SPACE       &kp RIGHT_ALT  &lt 3 RIGHT_WIN  &kp SPACE  &kp SLASH
+&kp ESCAPE      &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                 &kp N6         &kp N7           &kp N8     &kp N9     &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W     &kp E     &kp R   &kp T                                  &kp Y          &kp U            &kp I      &kp O      &kp P     &kp NON_US_BACKSLASH
+&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F   &kp G                                  &kp H          &kp J            &kp K      &kp L      &kp SEMI  &kp ENTER
+&kp LCTRL       &kp Z   &kp X     &kp C     &kp V   &kp B   &kp C_MUTE    &rgb_ug RGB_TOG  &kp N          &kp M            &kp COMMA  &kp DOT    &kp SQT   &kp RSHFT
+                        &kp LGUI  &kp LALT  &mo 1   &tog 2  &kp DEL       &kp SPACE        &kp RIGHT_ALT  &lt 3 RIGHT_WIN  &kp SPACE  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -84,11 +84,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS       &trans        &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS        &none         &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp ENTER       &kp UP_ARROW  &none
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW
-                          &trans        &trans        &trans        &trans        &trans    &trans  &kp NUMBER_0    &trans        &kp PERIOD    &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                    &kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp MINUS       &trans        &trans
+&trans      &rgb_ug RGB_HUI  &trans           &rgb_ug RGB_BRI  &trans           &trans                          &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PLUS        &none         &trans
+&trans      &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans                          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp ENTER       &kp UP_ARROW  &none
+&trans      &trans           &trans           &trans           &trans           &trans        &trans    &trans  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW
+                             &trans           &trans           &trans           &trans        &trans    &trans  &kp NUMBER_0    &trans        &kp PERIOD    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
