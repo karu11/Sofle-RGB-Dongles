@@ -18,7 +18,7 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-endif 
+endif  # dongle
 
 if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
 
@@ -58,7 +58,21 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif
+endif # USB
 
-endif
+if ZMK_DISPLAY
+
+config I2C
+   default y
+
+config SSD1306
+    default y
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif #zmk display
+
+endif 
 
