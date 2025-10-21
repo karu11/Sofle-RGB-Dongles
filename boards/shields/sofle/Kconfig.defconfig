@@ -18,7 +18,7 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-endif  # dongle
+endif  # SHIELD_SOFLE_DONGLE
 
 if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
 
@@ -58,7 +58,7 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif # USB
+endif # SSD1306
 
 if ZMK_DISPLAY
 
@@ -72,7 +72,7 @@ choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
 
-endif #zmk display
+endif # ZMK_DISPLAY
 
-endif 
+endif # SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
 
